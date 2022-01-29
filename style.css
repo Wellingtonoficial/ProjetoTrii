@@ -123,6 +123,7 @@ html,body{
 @media (max-width: 589.98px) {
     html,body{
         height: 100% !important;
+        border: solid 2px red;
     }
     #container{
         width: 90%;
