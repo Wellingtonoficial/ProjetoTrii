@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM TRII</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section id="container">
+        <div id="subContainer">
+            <div class="row1">
+                <h1>Peça seu orçamento agora mesmo!</h1>
+            </div>
+            <div class="row2">
+                <form id="form" action="" method="">
+                    <div class="sec1">
+                        <div>
+                            <input id="nome"  type="text" name="nome" required="">
+                            <label for="">Nome</label>
+                        </div>
+                        <div>
+                            <input id="email" type="email" name="email" required="">
+                            <label for="">E-mail</label>
+                        </div>
+                        <div>
+                            <input id="tel" type="text" name="Telefone" required="">
+                            <label for="">Telefone</label>
+                        </div>
+                        <select name="" id="servicos">
+                            <option value="">Escolha o serviço que deseja</option>
+                            <option value="1">Serviço 1</option>
+                            <option value="2">Serviço 2</option>
+                            <option value="3">Serviço 3</option>
+                        </select>
+                       <div class="textareaP">
+                            <textarea id="mensagem" name="message" required=""></textarea>
+                            <label for="">Mensagem</label>
+                       </div>
+                    </div>
+                    <div class="sec2">
+                        <button id="btn">Enviar</button>
+                    </div>
+                    <p id="msgSuces"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./validacaoDeCampo.js"></script>
+</body>
+</html>

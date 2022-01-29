@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', sans-serif;
+    background: #9ddeff;
+}
+#container{
+    width: 75%;
+    height:80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(252, 252, 252);
+}
+#container #subContainer{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+ .row1{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;    
+}
+ .row1 h1{
+    color: rgb(88, 88, 88);
+}
+ .row2 form .sec1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+ .row2 form .sec1 div{
+    width: 100%;
+    position: relative;
+}
+ .row2 form .sec1 div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 0 0 20px;
+    border: solid 1px black;
+}
+ .row2 form .sec1 div input:focus { 
+    outline: none !important;
+    border: solid 2px #69cbfc;
+}
+ .row2 form .sec1 div label{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 13px;
+    transition: .5s ease;
+    pointer-events: none;
+    color: rgb(88, 87, 87);
+}
+#container #subContainer .row2 form .sec1 div input:focus ~  label,
+#container #subContainer .row2 form .sec1 div textarea:focus ~  label,
+#container #subContainer .row2 form .sec1 div input:valid ~  label,
+#container #subContainer .row2 form .sec1 div textarea:valid ~  label
+{
+    top: 1px;
+    font-size:10px;
+    color: #69cbfc;
+}
+ .row2 form .sec1 select{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 0 0 15px;
+    border: solid 1px black;
+    color: rgb(88, 87, 87);
+}
+.row2 form .sec1 select:focus { 
+    outline: none !important;
+    border: solid 2px #69cbfc;
+}
+.row2 form .sec1 .textareaP{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+ .row2 form .sec1 .textareaP textarea{
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px 0 0 20px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+ .row2 form .sec1 .textareaP textarea:focus { 
+    outline: none !important;
+    border: solid 2px #69cbfc;
+}
+.row2 form .sec1 .focusErro:focus { 
+    border: solid 2px #d42323 !important;
+}
+ .row2 form .sec2{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+ .row2 form .sec2 button{
+    width: 120px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background: #0175be;
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+@media (max-width: 589.98px) {
+    #container{
+        width: 90%;
+        height: 90%;  
+    }
+    #container #subContainer{
+        width: 90%;
+        height: 90%;
+    }
+    #container #subContainer .row1{
+        margin-bottom: 20px;
+    }
+    #container #subContainer .row1 h1{
+        color: rgb(88, 88, 88);
+        font-size: 1.3rem;
+    }
+    #container #subContainer .row2 form .sec1{
+        display: grid;
+        grid-template-columns: 1fr 
+    }
+    #container #subContainer .row2 form .sec1 .textareaP{
+        grid-column-end: 1;
+    }
+    #container #subContainer .row2 form .sec1 .textareaP textarea{
+        min-height: 200px;
+        max-height: 200px;
+    }
+    #container #subContainer .row2 form .sec2 {
+        margin-top: 20px;
+    }
+}
+
