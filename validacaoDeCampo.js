@@ -1,5 +1,5 @@
 
-document.getElementById("btn").addEventListener('click', (e, succ)=> {
+document.getElementById("btn").addEventListener('click', (e)=> {
     e.preventDefault()
     const nome = document.getElementById("nome")
     const email = document.getElementById("email")
