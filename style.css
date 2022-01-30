@@ -13,7 +13,7 @@ body{
     background: #9ddeff;
 }
 #container{
-    max-width: 75%;
+    width: 75%;
     height: 600px;
     border-radius: 10px;
     display: flex;
@@ -27,7 +27,6 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: solid 2px red;
 }
  .row1{
     width: 100%;
@@ -123,14 +122,18 @@ body{
 }
 @media (max-width: 589.98px) {
     #container{
-        width: 90%;
+        width: 95%;
+    }
+    #container #subContainer{
+        width: 95%;
+        height: 95%;
     }
     #container #subContainer .row1{
         margin-bottom: 20px;
     }
     #container #subContainer .row1 h1{
         color: rgb(88, 88, 88);
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     #container #subContainer .row2 form .sec1{
         display: grid;
