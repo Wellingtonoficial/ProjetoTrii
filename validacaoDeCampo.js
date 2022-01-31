@@ -1,4 +1,6 @@
 
+
+
 document.getElementById("btn").addEventListener('click', (e)=> {
     e.preventDefault()
     const nome = document.getElementById("nome")
@@ -32,9 +34,16 @@ document.getElementById("btn").addEventListener('click', (e)=> {
         mensagem.focus()
     }
     else{        
-        let msgSuces  = document.getElementById("msgSuces").innerHTML = "Mensagem enviada com sucesso!"
+        nome.value = ""
+        email.value = ""
+        tel.value = ""
+        servicos.value = ""
+        mensagem.value = ""
+        document.getElementById("msgSuces").innerHTML = "Mensagem enviada com sucesso!"
+        setTimeout(()=>{ 
+            document.getElementById("msgSuces").innerHTML = ""
+        }, 3000);
             
     }
-
 })
 
